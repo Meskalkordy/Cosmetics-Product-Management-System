@@ -1,25 +1,22 @@
 
-1. Requirements
-In our project, defining the requirements is the most critical step in system analysis. It helps us understand exactly what the Cosmetics Product Management System (CPMS) needs to do and how it should perform to solve the problem of manual and unorganized data.
-1.1 Functional Requirements
-These requirements describe the specific services and functions that our system must provide to the users:
-•	User Authentication: The system shall allow users to create new accounts and log in securely to access the management features.
-•	Product Management (CRUD): The system must allow authorized users to add, view, edit, and delete cosmetic products.
-•	Category & Supplier Linking: The system must create clear relationships by linking each product to its specific category ( Makeup, Skincare) and its assigned supplier.
-•	Real-time Dashboard: The system should provide a dashboard that displays live statistics, such as the total number of products, suppliers, and recent activities.
-•	Advanced Search & Filter: Users must be able to search for products by name or category and filter results to find information quickly.
-•	Authorization Control: The system must check user permissions before allowing sensitive actions like deleting or modifying data to ensure security.
 
-1.2 Non-Functional Requirements
-These requirements define the quality, performance, and constraints of the CPMS to ensure a high-quality user experience:
-•	Data Security: All system data must be protected. Sensitive actions should only be performed by users with the correct permissions.
-•	System Performance: The system should respond to user queries (like searching or loading the dashboard) very quickly, ideally within 3 seconds.
-•	Usability: The user interface (UI) must be simple, clean, and easy to navigate so that shop owners and staff can use it without needing complex training.
-•	Responsiveness: The system must be fully responsive, meaning it should work perfectly on both desktop computers and mobile devices.
-•	Maintainability: By using the MVC (Model-View-Controller) pattern with Laravel, the system should be easy to update and scale in the future
-
-
-
+#1. Requirements
+In our team’s analysis, we believe that defining clear requirements is the foundation of the entire project. As software engineers, our goal isn't just to write code, but to build a solution that directly addresses the "manual data mess" we identified in our problem statement. We have categorized our requirements into Functional and Non-functional to ensure a high-quality engineering approach.
+##1.1 Functional Requirements
+These requirements represent the core services that our CPMS will provide to solve the daily challenges of cosmetics inventory management:
+•	Secure User Authentication: To protect the shop's data, we decided that the system must allow staff to create accounts and log in securely before accessing any management tools.
+•	Complete Product Control (CRUD): The system shall enable authorized users to perform full operations (Add, View, Edit, and Delete) on cosmetic products to ensure the digital inventory is always up-to-date.
+•	Relational Data Linking: One of our main engineering goals is to ensure that every product is strictly linked to a specific category (e.g., Makeup, Skincare) and a specific supplier, which eliminates the fragmented data problem.
+•	Live Statistics Dashboard: We want to provide the manager with a "quick look" at the business status. The system will display real-time numbers of total products, suppliers, and a list of the most recent entries.
+•	Smart Search & Advanced Filters: To save time for the shop staff, we prioritized a search feature that allows finding products by name, and filtering them by category or supplier instantly.
+•	Role-Based Authorization: To prevent accidental data loss, the system must check permissions. For example, while any staff can add a product, only the Manager should have the authority to delete a supplier or a product record
+##1.2 Non-Functional Requirements
+Beyond what the system does, we focused on "how" it performs to ensure a professional user experience:
+•	Robust Data Security: We prioritized protecting sensitive records. Sensitive actions must be restricted based on user roles to avoid unauthorized changes.
+•	High Performance (Speed): We understand that in a busy shop, time is money. Therefore, our system is designed to process search queries and load the dashboard within a maximum of 3 seconds.
+•	Usability & Simple UI: Since the shop staff might not be tech-experts, we are committed to building a clean, simple, and intuitive interface that requires minimal training.
+•	System Responsiveness: We want the shop owner to manage the inventory from any device. The system will be fully responsive, working perfectly on desktops, tablets, and mobile phones.
+•	Maintainability & Scalability: By using the MVC (Model-View-Controller) pattern with Laravel, we ensure that our code is organized. This makes it easy for us (or any other developer) to add new features in the future without breaking the system
 
 
 
